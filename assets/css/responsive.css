@@ -1,0 +1,32 @@
+@media(max-width: 1023px){
+    #content .project-list,
+#content .about-list{
+    display: grid;
+    grid-template-columns: auto auto;
+    column-gap: 15px;
+    row-gap: 15px;
+}
+.about-list .about-item {
+    margin: 6px 0;
+}
+.about-text{
+    margin-bottom: 48px;
+}
+.about-list .about-button{
+    padding: 16px;
+}
+}
+
+@media(max-width: 739px){
+    #content .project-list,
+    #content .about-list{
+        display: grid;
+        grid-template-columns: auto;
+        column-gap: 15px;
+        row-gap: 15px;
+    }
+    #nav{
+        overflow: hidden;
+    }
+
+}
