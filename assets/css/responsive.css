@@ -17,6 +17,12 @@
 }
 }
 
+@media(min-width: 740px) and (max-width: 1023px){
+    #nav{
+        padding: unset;
+    }
+}
+
 @media(max-width: 739px){
     #content .project-list,
     #content .about-list{
@@ -26,7 +32,14 @@
         row-gap: 15px;
     }
     #nav{
-        overflow: hidden;
+        display: none;
+    }
+    .nav-mobile{
+        display: block;
+    }
+    .nav-mobile li:first-child{
+        display: inline-block;
+
     }
 
 }

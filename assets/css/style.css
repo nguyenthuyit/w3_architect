@@ -67,6 +67,39 @@ hr{
     float: right;
     
 }
+/* mobile */
+.nav-mobile{
+    height: 55px;
+    background-color: #fff;
+    letter-spacing: 4px;
+    font-size: 20px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    z-index: 1;
+    overflow: hidden;
+    display: none;
+
+}
+.nav-mobile li a{
+    text-decoration: none;
+    padding: 16px;
+    display: block;
+    font-size: 20px;
+    color: #000;
+}
+.nav-mobile .menu-icon-mobile{
+    padding: 0 23px;
+    position: absolute;
+     right: 0;
+     top: 0
+ }
+ .nav-mobile .menu-icon{
+     line-height: 55px;
+     font-size: 20px;
+ }
 .header-img{
     position: relative;
 }
@@ -108,8 +141,7 @@ hr{
 #content .content-section {
     
     max-width: 100%;
-    margin-top: 80px;
-    padding:0 48px;
+    padding:48px;
     margin-left: auto;
     margin-right: auto;
 

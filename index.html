@@ -7,6 +7,7 @@
     <title>Architects</title>
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="./assets/css/responsive.css">
+    <link rel="stylesheet" href="./assets/font-icon/themify-icons/themify-icons.css">
 </head>
 <body>
     <div id="app">
@@ -18,6 +19,19 @@
                 <a href="#contact">Contact</a>
             </div>
         </div>
+        <!-- mobile -->
+        <div id="nav-mob" class="nav-mobile">
+            <ul>
+                <li><a href="#home">BR Architects</a></li>
+                <li><a href="#project">Project</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div id="menu-mobile" class="menu-icon-mobile">
+                <i class=" menu-icon ti-menu"></i>
+            </div>
+        </div>
+
         <header id="home" class="header-img">
             <img src="./assets/img/architect.jpg" alt="architect">
             <div class="info-img">
@@ -129,5 +143,30 @@
 
         </div>
     </div>
+
+    <script>
+        var menuMobile = document.getElementById('nav-mob');
+        var menuIcon = document.getElementById('menu-mobile');
+        var navHeight= menuMobile.clientHeight;
+        menuIcon.onclick = function(){
+            var isClosed = menuMobile.clientHeight ===navHeight;
+            if(isClosed){
+                menuMobile.style.height='auto';
+            } else {
+                menuMobile.style.height = null;
+            }
+        }
+
+        var menuItems = document.querySelectorAll('#nav-mob li a[href *="#"]');
+        for( var i=0; i<menuItems.length; i++){
+            var menuItem = menuItems[i];
+            menuItem.onclick = function(){
+                menuMobile.style.height = null;
+
+            }
+        }
+   
+
+    </script>
 </body>
 </html>
